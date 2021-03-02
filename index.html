@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Drag'n Drop</title>
+  <link rel="stylesheet" href="dragNdrop.css">
+</head>
+<body>
+  <h1>Réorganisation en Drag & Drop</h1>
+  <h2>Déplace les éléments</h2>
+  <br><br><br>
+  <div id="sort1" data-sortable=".card">
+    <div class="card" data-position="0" data-id="1">
+      <div class="content">
+        <img src="img/1.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="1" data-id="2">
+      <div class="content">
+        <img src="img/2.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="2" data-id="3">
+      <div class="content">
+        <img src="img/3.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="3" data-id="4">
+      <div class="content">
+        <img src="img/4.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="4" data-id="5">
+      <div class="content">
+        <img src="img/5.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="5" data-id="6">
+      <div class="content">
+        <img src="img/6.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="6" data-id="7">
+      <div class="content">
+        <img src="img/7.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="7" data-id="8">
+      <div class="content">
+        <img src="img/8.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="8" data-id="9">
+      <div class="content">
+        <img src="img/9.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="9" data-id="10">
+      <div class="content">
+        <img src="img/10.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="10" data-id="11">
+      <div class="content">
+        <img src="img/11.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="11" data-id="12">
+      <div class="content">
+        <img src="img/12.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="12" data-id="13">
+      <div class="content">
+        <img src="img/13.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="13" data-id="14">
+      <div class="content">
+        <img src="img/14.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+    <div class="card" data-position="14" data-id="15">
+      <div class="content">
+        <img src="img/15.jpg">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <h2>Déplace les éléments dans les fenètres et entre les fenètres</h2>
+  <div class="flex">
+    <div class="dropper">
+      <div class="draggable">#1</div>
+      <div class="draggable">#2</div>
+    </div>
+    <div class="dropper">
+      <div class="draggable">#3</div>
+      <div class="draggable">#4</div>
+    </div>
+  </div>
+  <br><br>
+  <h2>Déplace un ou plusieurs fichiers en même temps dans la fenètre</h2>
+  <div id="dropper">J'accepte les éléments déplacés !</div>
+  <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=es6%2CArray.isArray%2CArray.of%2CArray.from%2CArray.prototype.filter%2CArray.prototype.find%2CArray.prototype.findIndex%2CArray.prototype.forEach%2CArray.prototype.includes%2CArray.prototype.indexOf%2CArray.prototype.keys%2CArray.prototype.lastIndexOf%2CArray.prototype.map%2CArray.prototype.reduce%2CArray.prototype.some%2CArray.prototype.sort%2CDate.now%2CElement.prototype.after%2CElement.prototype.append%2CElement.prototype.before%2CElement.prototype.classList%2CElement.prototype.cloneNode%2CElement.prototype.nextElementSibling%2CElement.prototype.placeholder%2CElement.prototype.previousElementSibling%2CElement.prototype.remove%2CElement.prototype.replaceWith%2CElement.prototype.scroll%2CElement.prototype.scrollBy%2CElement.prototype.scrollIntoView%2CElement.prototype.toggleAttribute%2CHTMLDocument%2CJSON%2CMap%2CMath.trunc%2CNumber.isInteger%2CNumber.isFinite%2CNumber.isNaN%2CNumber.parseFloat%2CNumber.parseInt%2CObject.assign%2CObject.create%2CObject.keys%2CObject.values%2CPromise%2CPromise.prototype.finally%2CString.prototype.fontcolor%2CString.prototype.fontsize%2CString.prototype.includes%2CString.prototype.italics%2CString.prototype.link%2CString.prototype.replaceAll%2CString.prototype.trim%2CWindow%2CXMLHttpRequest%2Cdocument%2Cdocument.getElementsByClassName%2Cdocument.querySelector%2Cdocument.visibilityState%2Cfetch%2CgetComputedStyle%2CinnerHeight%2CinnerWidth%2CpageXOffset%2CpageYOffset%2CrequestAnimationFrame%2Cscroll%2CscrollBy%2CscrollIntoView%2CscrollX%2CscrollY%2Csmoothscroll%2Cviewport%2Cwindow.scroll%2Cwindow.scrollBy" defer></script>
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+  <script type="text/javascript" src="dragNdrop.js"></script>
+  <script type="text/javascript">
+  sortable = new Sortable(document.querySelector('#sort1'))
+  </script>
+</body>
+</html>
